@@ -7,3 +7,6 @@
     a. The three parameters starting with "num_" can only be taken in by an integer number or else an error will appear.
  2. A graph will be generated at the end of the program once it runs.
  
+### Github
+
+This code may be found at: https://github.com/Igloogloo/CAPS-Continuous-Action-Policy-Shaping
