@@ -1,9 +1,7 @@
 """
-This code mainly follows a Soft-Actor Critic YouTube tutorial found at:
+This code mainly follows a Soft-Actor Critic YouTube tutorial (with modifications) found at:
 https://www.youtube.com/watch?v=ioidsRlf79o&t=2649s
 Channel name: Machine Learning with Phil
-
-Any modifiations are made by the AABL Lab.
 """
 
 
