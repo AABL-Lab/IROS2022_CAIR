@@ -88,10 +88,6 @@ def checkCmdArg():
             print("policyShaping.py <kappa> <num-trials> <num_episodes>")
             sys.exit(2)
 
-"""
-Default value of the three variables 
-goes into a function to see if user input the correct information
-"""
 def main(num_kappa, num_trials, num_episodes):
     """
     ActionQueue is a class for credit assignment. It keeps track of the last "size" actions
