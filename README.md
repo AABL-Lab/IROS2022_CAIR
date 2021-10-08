@@ -1,6 +1,6 @@
-# CAPS-Continuous-Action-Policy-Shaping
+# CAIR-Continuous-Action space-Interactive-Reinforcement learning
 
- ## CAPS for BipedalWalker-V3 with the seeable heuristic teacher. 
+ ## CAIR for BipedalWalker-V3 with the seeable heuristic teacher. 
  
  ### How to Run Program
  1. Please enter "python caps.py <num_kappa> <num_trials> <num_exponents>"
