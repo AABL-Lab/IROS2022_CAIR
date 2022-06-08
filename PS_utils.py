@@ -1,3 +1,10 @@
+"""
+The following code is under the MIT License.
+
+Author: Isaac Sheidlower, Github: IsaacSheidlower, Email: Isaac.Sheidlower@tufts.edu
+Affiliation: Tufts University, AABL Lab
+"""
+
 from operator import truediv
 import torch
 import torch.nn as nn

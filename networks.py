@@ -1,4 +1,11 @@
 """
+The following code is under the MIT License.
+
+Author: Isaac Sheidlower, Github: IsaacSheidlower, Email: Isaac.Sheidlower@tufts.edu
+Affiliation: Tufts University, AABL Lab
+"""
+
+"""
 This code mainly follows a Soft-Actor Critic YouTube tutorial (with modifications) found at:
 https://www.youtube.com/watch?v=ioidsRlf79o&t=2649s
 Channel name: Machine Learning with Phil

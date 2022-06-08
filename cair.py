@@ -1,3 +1,10 @@
+"""
+The following code is under the MIT License.
+
+Author: Isaac Sheidlower, Github: IsaacSheidlower, Email: Isaac.Sheidlower@tufts.edu
+Affiliation: Tufts University, AABL Lab
+"""
+
 import gym
 import random
 import pickle
@@ -109,7 +116,7 @@ def main(num_kappa, num_trials, num_episodes):
         interval_min = .1
         interval_max = .8
 
-        episodes = 300 #change this to num_episodes
+        episodes = num_episodes 
         USE_CUDA = torch.cuda.is_available()
         learning_rate = .001
         replay_buffer_size = 100000
@@ -178,7 +185,7 @@ def main(num_kappa, num_trials, num_episodes):
                 # if env_only == False:
                 # if(env_interacts%10 == 0 or env_interacts == 1):
                 action, dist, mu, sigma, kl_total = sample_normal(
-                    agent, actor, observation, with_noise=False, max_action=env.action_space.high, env_only=False, kappa=.9)
+                    agent, actor, observation, with_noise=False, max_action=env.action_space.high, env_only=False, kappa=num_kappa)
                 old_observation = observation
                 observation, reward, done, _ = env.step(action)
                 actor.remember(old_observation, action, reward, observation, done)
@@ -294,7 +301,7 @@ if __name__ == "__main__":
     #checkCmdArg()
     for m in range(1,len(sys.argv)):
         if m == 1:
-            num_kappa = int(sys.argv[m])
+            num_kappa = float(sys.argv[m])
         if m == 2:
             num_trials = int(sys.argv[m])
         if m == 3:
