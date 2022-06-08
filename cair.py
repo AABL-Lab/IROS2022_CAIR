@@ -255,18 +255,18 @@ def main(num_kappa, num_trials, num_episodes):
     for i in range(len(trial_rewards)):
         temp_prime = []
         for j in range(len(trial_rewards[i])):
-            if j > 10:
+            if j >= 10:
                 temp_prime.append(np.average(trial_rewards[i][j-10:j]))
 
         trial_avg.append(temp_prime)
 
     trial_mean = np.mean(trial_avg, axis=0)
     trial_std = np.std(trial_avg, axis=0)
+    print(trial_rewards)
     print(trial_mean, trial_std)
 
     fig, ax = plt.subplots() 
-
-    # Let's remove those black lines:
+    
     right_side = ax.spines["right"]
     top_side = ax.spines["top"]
     right_side.set_visible(False)
