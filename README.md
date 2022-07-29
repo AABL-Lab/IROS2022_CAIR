@@ -1,4 +1,4 @@
-# CAIR-Continuous-Action space-Interactive-Reinforcement learning
+# CAIR-Continuous-Action-Space-Interactive-Reinforcement learning
 
  ## CAIR for BipedalWalker-V3 with the seeable heuristic teacher. 
  
